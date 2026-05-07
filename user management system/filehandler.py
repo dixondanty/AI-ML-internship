@@ -18,13 +18,13 @@ def updateuser(osn,nun,npw):
 
     with open(filename,"w") as file:
         users[nun]=npw
-        for usne,paswd in users.itmes():
+        for usne,paswd in users.items():
             file.write(f"{usne},{paswd}\n")
 def deleteuser(usn):
     users=readuser()
     users.pop(usn)
 
     with open(filename,"w") as file:
-        for usne,paswd in users.itmes():
+        for usne,paswd in users.items():
             file.write(f"{usne},{paswd}\n")
     
