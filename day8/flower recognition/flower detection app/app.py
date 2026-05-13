@@ -14,7 +14,7 @@ st.title("Flower Classification App")
 
 st.write("Upload a flower image and the model will predict its class.")
 
-# Upload image
+# Upload imagea
 uploaded_file = st.file_uploader(
     "Choose a flower image",
     type=["jpg", "jpeg", "png"]
